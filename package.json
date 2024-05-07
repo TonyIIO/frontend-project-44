@@ -1,6 +1,7 @@
 {
-  "name": "frontend-project-44",
+ "name": "frontend-project-44",
   "version": "1.0.0",
+  "type": "module"
   "description": "@hexlet/code",
   "main": "index.js",
   "scripts": {
@@ -8,4 +9,7 @@
   },
   "author": "",
   "license": "ISC"
+}
+"bin": {
+  "brain-games": "bin/brain-games.js"
 }
