@@ -1,15 +1,15 @@
-{
- "name": "frontend-project-44",
+ {
+  "name": "frontend-project-44",
   "version": "1.0.0",
-  "type": "module"
+  "type": "module",
   "description": "@hexlet/code",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
-}
-"bin": {
-  "brain-games": "bin/brain-games.js"
+  "license": "ISC",
+  "bin": {
+    "brain-games": "bin/brain-games.js"
+  }
 }
