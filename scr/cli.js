@@ -1,0 +1,1 @@
+scr="lib/readline-sync-master/lib/readline-sync.js"
