@@ -14,5 +14,9 @@
   },
   "dependencies": {
     "readline-sync": "^1.4.10"
+  },
+  "devDependencies": {
+    "eslint": "^9.2.0",
+    "eslint-config-rallycoding": "^1.2.0"
   }
 }
