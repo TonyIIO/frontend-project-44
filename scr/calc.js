@@ -10,11 +10,12 @@ export const calc = () => {
     const resultAB = oneRandNumb + twoRandNumb;
     console.log (`Question: ${oneRandNumb} + ${twoRandNumb}`);
     const answer = readlineSync.question('Your answer:');
-    if (`${answer} === ${resultAB}`) {
+    if (answer === resultAB) {
       console.log ('Correct!');
     } else {
-        return `${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`;
+        console.log (`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);
+        break;
       };
+      console.log (`Congratulations, ${name}!`);
   };
-    console.log (`Congratulations, ${name}!`);
 };

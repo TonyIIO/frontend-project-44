@@ -1,3 +1,3 @@
 #!/usr/bin/env node
-import { welcome } from '../scr/cli.js';
-welcome();
+import { name } from '../scr/cli.js';
+console.log(`Hello, ${name}!`);
