@@ -7,15 +7,14 @@ export const calc = () => {
   for (let i = 0; i < 3; i += 1) {
     const oneRandNumb = Math.floor(Math.random() * 10);
     const twoRandNumb = Math.floor(Math.random() * 10);
-    const resultAB = oneRandNumb + twoRandNumb;
+    const resultAB = `${oneRandNumb + twoRandNumb}`;
     console.log (`Question: ${oneRandNumb} + ${twoRandNumb}`);
     const answer = readlineSync.question('Your answer:');
     if (answer === resultAB) {
       console.log ('Correct!');
     } else {
-        console.log (`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);
-        break;
-      };
-      console.log (`Congratulations, ${name}!`);
+      return console.log (`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);       
+      };      
   };
+  console.log (`Congratulations, ${name}!`);
 };
