@@ -7,10 +7,23 @@ export const calc = () => {
   for (let i = 0; i < 3; i += 1) {
     const oneRandNumb = Math.floor(Math.random() * 10);
     const twoRandNumb = Math.floor(Math.random() * 10);
-    const resultAB = `${oneRandNumb + twoRandNumb}`;
-    console.log (`Question: ${oneRandNumb} + ${twoRandNumb}`);
+    const sign = ['+', '*', '-'];
+    const randSign = sign[Math.floor(Math.random() * 3)];
+    let resultAB = 0;
+    switch (randSign) {
+      case '+': 
+      resultAB = oneRandNumb + twoRandNumb;
+      break;
+      case '*': 
+      resultAB = oneRandNumb * twoRandNumb;
+      break;
+      case '-': 
+      resultAB = oneRandNumb - twoRandNumb;
+      break;  
+    };    
+    console.log (`Question: ${oneRandNumb} ${randSign} ${twoRandNumb}`);
     const answer = readlineSync.question('Your answer:');
-    if (answer === resultAB) {
+      if (Number (answer) === resultAB) {
       console.log ('Correct!');
     } else {
       return console.log (`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);       
