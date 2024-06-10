@@ -14,7 +14,7 @@ export const progression = () => {
     const secretNumb = getRandomInt(0, Number(lengthProgression));
     const arrProgressionChange = arrProgression.slice();
     arrProgressionChange[secretNumb] = '..';
-    console.log (`Question: ${String(arrProgressionChange)}!`);
+    console.log (`Question: ${arrProgressionChange}!`);
     const answer = readlineSync.question('Your answer:');
     if (Number(answer) === Number(arrProgression[secretNumb])) {
         console.log ('Correct!');
