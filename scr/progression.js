@@ -1,17 +1,26 @@
 import readlineSync from 'readline-sync';
 import {name} from '../scr/cli.js';
+import {getRandomInt} from '../scr/index.js';
 export const progression = () => {
-console.log(`Hello, ${name}!`);
+  console.log(`Hello, ${name}!`);
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
-    const randomNumb =  Math.floor(Math.random() * 10);
-    console.log (`Question: ${randomNumb}!`);
+    const RandomStepProgression =  getRandomInt(2, 3);
+    const lengthProgression = getRandomInt(6, 10);
+    const arrProgression = [];
+    for (let i = 0; arrProgression.length < lengthProgression; i += RandomStepProgression) {
+      arrProgression.push(i);
+    };   
+    const secretNumb = getRandomInt(0, Number(lengthProgression));
+    const arrProgressionChange = arrProgression.slice();
+    arrProgressionChange[secretNumb] = '..';
+    console.log (`Question: ${arrProgressionChange}!`);
     const answer = readlineSync.question('Your answer:');
-    if (answer === 'yes' && (randomNumb % 2) === 0 || answer === 'no' && (randomNumb % 2) !== 0) {
+    if (Number(answer) === Number(arrProgression[secretNumb])) {
         console.log ('Correct!');
     } else {
-        return console.log(`Let's try again, ${name}!`);
-     };    
+      return console.log (`${answer} is wrong answer ;(. Correct answer was ${arrProgression[secretNumb]}. Let's try again, ${name}!`);       
+      };      
   };   
   console.log (`Congratulations, ${name}!`);
 };
