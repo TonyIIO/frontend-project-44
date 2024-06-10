@@ -1,14 +1,15 @@
 import readlineSync from 'readline-sync';
 import {name} from '../scr/cli.js';
+import {getRandomInt} from '../scr/index.js';
 
 export const calc = () => {
   console.log(`Hello, ${name}!`);
   console.log ('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
-    const oneRandNumb = Math.floor(Math.random() * 10);
-    const twoRandNumb = Math.floor(Math.random() * 10);
+    const oneRandNumb = getRandomInt(1, 10);
+    const twoRandNumb = getRandomInt(1, 10);
     const sign = ['+', '*', '-'];
-    const randSign = sign[Math.floor(Math.random() * 3)];
+    const randSign = sign[getRandomInt(0, 2)];
     let resultAB = 0;
     switch (randSign) {
       case '+': 

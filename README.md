@@ -7,4 +7,4 @@ https://asciinema.org/a/6M8dMcwHX4TS9IzrEJarE5D6d even;
 https://asciinema.org/a/TIu3ecxkbBo0ceN7XY8n3sFqx calc;
 https://asciinema.org/a/QgroaF2VXq8ByFT53UEnyHaeJ gcd;
 https://asciinema.org/a/oOVS7Iezksn0kZgMey2KyO41D progression;
-prime;
+https://asciinema.org/a/uHA5IAmxAuKFiZtLkjeESKQDx prime;
