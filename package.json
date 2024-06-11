@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@eslint/create-config": "1.0.0",
-    "@eslint/js": "8.0.0",
+    "@eslint/js": "^8.0.0",
     "eslint": "8.0.0",
     "eslint-config-rallycoding": "1.2.0",
     "eslint-plugin-import": "^2.29.1",
