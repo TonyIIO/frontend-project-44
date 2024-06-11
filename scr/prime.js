@@ -1,7 +1,8 @@
 import readlineSync from 'readline-sync';
-import {name} from '../scr/cli.js';
+import { name } from '../scr/cli.js';
 import { isPrime } from './index.js';
-import {getRandomInt} from '../scr/index.js';
+import { getRandomInt } from '../scr/index.js';
+
 export const prime = () => {
 console.log(`Hello, ${name}!`);
 console.log('Answer "yes" if given number is prime. Otherwise answer "no".');

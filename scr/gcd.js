@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
-import {name} from '../scr/cli.js';
-import {NOD} from './index.js';
-import {getRandomInt} from '../scr/index.js';
+import { name } from '../scr/cli.js';
+import { NOD } from './index.js';
+import { getRandomInt } from '../scr/index.js';
  
 export const gcd = () => {
   console.log(`Hello, ${name}!`);
