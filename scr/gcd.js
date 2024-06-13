@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { name } from './cli.js';
 import { NOD, getRandomInt } from './index.js';
 
-const gcd = () => {
+export const gcd = () => {
   console.log(`Hello, ${name}!`);
   console.log('Find the greatest common divisor of given numbers.');
   for (let i = 0; i < 3; i += 1) {
@@ -19,5 +19,3 @@ const gcd = () => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
-export default gcd;

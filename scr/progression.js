@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
 import { name } from './cli.js';
-import { getRandomInt, getProgression } from './scr/index.js';
+import { getRandomInt, getProgression } from './index.js';
 
-const progression = () => {
+export const progression = () => {
   console.log(`Hello, ${name}!`);
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
@@ -15,10 +15,9 @@ const progression = () => {
     if (Number(answer) === Number(arrProgression[secretNumb])) {
       console.log('Correct!');
     } else {
-      return console.log(`${answer} is wrong answer ;(. Correct answer was ${arrProgression[secretNumb]}. Let's try again, ${name}!`);
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${arrProgression[secretNumb]}. Let's try again, ${name}!`);
+      return;
     }
   }
   console.log (`Congratulations, ${name}!`);
 };
-
-export default progression;

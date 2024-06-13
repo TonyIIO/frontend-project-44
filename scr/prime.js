@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { name } from './cli.js';
 import { isPrime, getRandomInt } from './index.js';
 
-const prime = () => {
+export const prime = () => {
   console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
@@ -17,5 +17,3 @@ const prime = () => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
-export default prime;
