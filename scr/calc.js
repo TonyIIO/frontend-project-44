@@ -2,7 +2,7 @@ import readlineSync from 'readline-sync';
 import { name } from './cli.js';
 import { getRandomInt } from './index.js';
 
-const calc = () => {
+export const calc = () => {
   console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
@@ -32,5 +32,3 @@ const calc = () => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
-export default calc;
