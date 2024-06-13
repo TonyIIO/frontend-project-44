@@ -7,9 +7,9 @@ export const NOD = (n, m) => {
 };
 
 export const getRandomInt = (min, max) => {
-  min = Math.ceil(min);
-  max = Math.floor(max);
-  return Math.floor(Math.random() * (max - min + 1)) + min;
+  let mins = Math.ceil(min);
+  let maxs = Math.floor(max);
+  return Math.floor(Math.random() * (maxs - mins + 1)) + mins;
 };
 
 export const isPrime = (num) => {
@@ -23,7 +23,7 @@ export const getProgression = (progressionStep, progressionBase, progressionLeng
   const arrProgression = [];
 
   for (let i = 0; i < progressionLength; i += 1) {
-    arrProgression[i] = progressionBase + i * progressionStep;      
+    arrProgression[i] = progressionBase + i * progressionStep;
   }
- return arrProgression;
+  return arrProgression;
 };

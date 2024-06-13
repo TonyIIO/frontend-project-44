@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import { name } from './cli.js';
+import name from './cli.js';
 import { getRandomInt } from './index.js';
 
-export const calc = () => {
+const calc = () => {
   console.log(`Hello, ${name}!`);
   console.log('What is the result of the expression?');
   for (let i = 0; i < 3; i += 1) {
@@ -21,14 +21,18 @@ export const calc = () => {
       case '-':
         resultAB = oneRandNumb - twoRandNumb;
         break;
+      default:
     }
     console.log(`Question: ${oneRandNumb} ${randSign} ${twoRandNumb}`);
     const answer = readlineSync.question('Your answer:');
     if (Number(answer) === resultAB) {
       console.log('Correct!');
     } else {
-      return console.log(`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);       
+      return console.log(`${answer} is wrong answer ;(. Correct answer was ${resultAB}. Let's try again, ${name}!`);
     }
   }
   console.log(`Congratulations, ${name}!`);
+  return;
 };
+
+export default calc;

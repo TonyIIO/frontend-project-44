@@ -1,9 +1,9 @@
 import readlineSync from 'readline-sync';
-import { name } from './cli.js';
+import name from './cli.js';
 import { getRandomInt } from './index.js';
 
-export const even = () => {
-console.log(`Hello, ${name}!`);
+const even = () => {
+  console.log(`Hello, ${name}!`);
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
     const randomNumb = getRandomInt(1, 99);
@@ -16,4 +16,7 @@ console.log(`Hello, ${name}!`);
     }
   }
   console.log(`Congratulations, ${name}!`);
+  return;
 };
+
+export default even;

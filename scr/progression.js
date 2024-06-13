@@ -1,8 +1,8 @@
 import readlineSync from 'readline-sync';
-import { name } from './cli.js';
+import name from './cli.js';
 import { getRandomInt, getProgression } from './index.js';
 
-export const progression = () => {
+const progression = () => {
   console.log(`Hello, ${name}!`);
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
@@ -19,5 +19,8 @@ export const progression = () => {
       return;
     }
   }
-  console.log (`Congratulations, ${name}!`);
+  console.log(`Congratulations, ${name}!`);
+  return;
 };
+
+export default progression;
