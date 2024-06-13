@@ -32,7 +32,6 @@ const calc = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default calc;

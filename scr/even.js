@@ -16,7 +16,6 @@ const even = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default even;

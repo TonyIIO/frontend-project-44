@@ -20,7 +20,6 @@ const progression = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default progression;

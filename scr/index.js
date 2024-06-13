@@ -7,8 +7,8 @@ export const NOD = (n, m) => {
 };
 
 export const getRandomInt = (min, max) => {
-  let mins = Math.ceil(min);
-  let maxs = Math.floor(max);
+  const mins = Math.ceil(min);
+  const maxs = Math.floor(max);
   return Math.floor(Math.random() * (maxs - mins + 1)) + mins;
 };
 

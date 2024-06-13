@@ -16,7 +16,6 @@ const prime = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default prime;

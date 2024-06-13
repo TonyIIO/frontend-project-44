@@ -18,7 +18,6 @@ const gcd = () => {
     }
   }
   console.log(`Congratulations, ${name}!`);
-  return;
 };
 
 export default gcd;
