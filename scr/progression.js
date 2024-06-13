@@ -7,7 +7,7 @@ export const progression = () => {
   console.log('What number is missing in the progression?');
   for (let i = 0; i < 3; i += 1) {
     const arrProgression = getProgression(getRandomInt(2, 4), 0, getRandomInt(5, 10));
-    const secretNumb = getRandomInt(0, arrProgression.length);
+    const secretNumb = getRandomInt(0, arrProgression.length - 1);
     const arrProgressionChange = arrProgression.slice();
     arrProgressionChange[secretNumb] = '..';
     console.log(`Question: ${arrProgressionChange.join(' ')}!`);
