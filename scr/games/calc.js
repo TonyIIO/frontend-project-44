@@ -1,5 +1,4 @@
-import { getRandomInt, calculate } from '../index.js';
-import startGame from '../index.js';
+import startGame, { getRandomInt, calculate } from '../index.js';
 
 const description = 'What is the result of the expression?';
 
@@ -12,7 +11,7 @@ const startRound = () => {
   const question = `Question: ${oneRandNumb} ${randSign} ${twoRandNumb}`;
   const answer = calculate(oneRandNumb, twoRandNumb, randSign);
   return [question, answer];
-}
+};
 
 const calc = () => startGame(description, startRound);
 

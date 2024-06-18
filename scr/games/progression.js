@@ -1,5 +1,4 @@
-import { getRandomInt, getProgression } from '../index.js';
-import startGame from '../index.js';
+import startGame, { getRandomInt, getProgression } from '../index.js';
 
 const description = 'What number is missing in the progression?';
 
@@ -11,7 +10,7 @@ const startRound = () => {
   const answer = arrProgression[secretNumb];
   const question = `Question: ${arrProgressionChange.join(' ')}!`;
   return [question, answer];
- };
+};
 
 const progression = () => startGame(description, startRound);
 

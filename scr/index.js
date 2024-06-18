@@ -1,7 +1,7 @@
 import readlineSync from 'readline-sync';
 
 const startGame = (description, generateRound) => {
-  console.log('Welcome to the Brain Games!')
+  console.log('Welcome to the Brain Games!');
   const name = readlineSync.question('May I have your name?');
   console.log(`Hello, ${name}!`);
   console.log(description);
@@ -9,11 +9,11 @@ const startGame = (description, generateRound) => {
     const [question, answer] = generateRound();
     console.log(question);
     const userAnswer = readlineSync.question('Your answer:');
-    if (answer !=userAnswer) {
+    if (answer != userAnswer) {
       console.log(`${userAnswer} is wrong answer ;(. Correct answer was ${answer}. Let's try again, ${name}!`);
       return;
-    } 
-    console.log('Correct!');   
+    }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
@@ -58,7 +58,7 @@ export const getProgression = (progressionStep, progressionBase, progressionLeng
   return arrProgression;
 };
 
-export const calculate =(oneRandNumb, twoRandNumb, randSign) =>{
+export const calculate = (oneRandNumb, twoRandNumb, randSign) => {
   let answerCalc;
   switch (randSign) {
     case '+':
@@ -69,11 +69,11 @@ export const calculate =(oneRandNumb, twoRandNumb, randSign) =>{
       break;
     case '-':
       answerCalc = oneRandNumb - twoRandNumb;
-      break;  
+      break;
     default:
       throw new Error(`Unknown operator: '${randSign}'`);
   }
   return answerCalc;
-}; 
+};
 
 export default startGame;
