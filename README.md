@@ -30,12 +30,12 @@ It is a collection of 5 console mathematical games for brain training:
 
 asciinema:
 ### brain-even
-[![asciicast](https://asciinema.org/a/6M8dMcwHX4TS9IzrEJarE5D6d.svg)](https://asciinema.org/a/6M8dMcwHX4TS9IzrEJarE5D6d)
+[![asciicast](https://asciinema.org/a/k68ei4nxChq7prSzXocFgoP94.svg)](https://asciinema.org/a/k68ei4nxChq7prSzXocFgoP94) 
 ### brain-calc 
 [![asciinema](https://asciinema.org/a/TIu3ecxkbBo0ceN7XY8n3sFqx.svg)](https://asciinema.org/a/TIu3ecxkbBo0ceN7XY8n3sFqx)
 ### brain-gcd
-[![asciinema](https://asciinema.org/a/QgroaF2VXq8ByFT53UEnyHaeJ.svg)](https://asciinema.org/a/QgroaF2VXq8ByFT53UEnyHaeJ)
+[![asciinema](https://asciinema.org/a/gdKDsCE3zjL1bbjetlaXLAsFX.svg)](https://asciinema.org/a/gdKDsCE3zjL1bbjetlaXLAsFX)
 ### brain-progression
-[![asciinema](https://asciinema.org/a/oOVS7Iezksn0kZgMey2KyO41D.svg)](https://asciinema.org/a/oOVS7Iezksn0kZgMey2KyO41D)
+[![asciinema](https://asciinema.org/a/gQNAzJ4fWjMQbGeeoAjuOT6K9.svg)](https://asciinema.org/a/gQNAzJ4fWjMQbGeeoAjuOT6K9)
 ### brain-prime
 [![asciinema](https://asciinema.org/a/uHA5IAmxAuKFiZtLkjeESKQDx.svg)](https://asciinema.org/a/uHA5IAmxAuKFiZtLkjeESKQDx)
