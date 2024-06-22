@@ -13,13 +13,18 @@ const getProgression = (progressionStep, progressionBase, progressionLength) => 
 };
 
 const startRound = () => {
-  const arrProgression = getProgression(getRandomInt(2, 4), 0, getRandomInt(5, 10));
-  const secretNumb = getRandomInt(0, arrProgression.length - 1);
-  const arrProgressionChange = arrProgression.slice();
-  arrProgressionChange[secretNumb] = '..';
-  const answer = arrProgression[secretNumb];
-  const question = `Question: ${arrProgressionChange.join(' ')}!`;
-  return [question, answer];
+  const arrRound = [];
+  const roundCount = 3;
+  for (let i = 0; i < roundCount; i += 1) {
+    const arrProgression = getProgression(getRandomInt(2, 4), 0, getRandomInt(5, 10));
+    const secretNumb = getRandomInt(0, arrProgression.length - 1);
+    const arrProgressionChange = arrProgression.slice();
+    arrProgressionChange[secretNumb] = '..';
+    const answer = arrProgression[secretNumb];
+    const question = `Question: ${arrProgressionChange.join(' ')}!`;
+    arrRound.push([question, answer]);
+  }
+  return arrRound;
 };
 
 const progression = () => startGame(description, startRound);

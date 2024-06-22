@@ -24,12 +24,17 @@ const calculate = (firstNumber, secondNumber, operator) => {
 };
 
 const startRound = () => {
-  const firstNumber = getRandomInt(1, 10);
-  const secondNumber = getRandomInt(1, 10);
-  const operator = sign[getRandomInt(0, 2)];
-  const question = `Question: ${firstNumber} ${operator} ${secondNumber}`;
-  const answer = calculate(firstNumber, secondNumber, operator);
-  return [question, answer];
+  const arrRound = [];
+  const roundCount = 3;
+  for (let i = 0; i < roundCount; i += 1) {
+    const firstNumber = getRandomInt(1, 10);
+    const secondNumber = getRandomInt(1, 10);
+    const operator = sign[getRandomInt(0, 2)];
+    const question = `Question: ${firstNumber} ${operator} ${secondNumber}`;
+    const answer = calculate(firstNumber, secondNumber, operator);
+    arrRound.push([question, answer]);
+  }
+  return arrRound;
 };
 
 const calc = () => startGame(description, startRound);

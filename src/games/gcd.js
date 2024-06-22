@@ -17,11 +17,16 @@ const NOD = (number1, number2) => {
 };
 
 const startRound = () => {
-  const firstNumber = getRandomInt(1, 50);
-  const secondNumber = getRandomInt(1, 50);
-  const answer = NOD(firstNumber, secondNumber);
-  const question = `Question: ${firstNumber} ${secondNumber}`;
-  return [question, answer];
+  const arrRound = [];
+  const roundCount = 3;
+  for (let i = 0; i < roundCount; i += 1) {
+    const firstNumber = getRandomInt(1, 50);
+    const secondNumber = getRandomInt(1, 50);
+    const answer = NOD(firstNumber, secondNumber);
+    const question = `Question: ${firstNumber} ${secondNumber}`;
+    arrRound.push([question, answer]);
+  }
+  return arrRound;
 };
 
 const gcd = () => startGame(description, startRound);
