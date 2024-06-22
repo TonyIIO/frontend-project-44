@@ -7,7 +7,7 @@ const isPrime = (number) => {
   if (number < 2) {
     return false;
   }
-  for (let i = 2; i < (number / 2); i += 1) { 
+  for (let i = 2; i < (number / 2); i += 1) {
     if (number % i === 0) {
       return false;
     }
@@ -23,8 +23,8 @@ const startRound = () => {
     const answer = (isPrime(generateNumber) ? 'yes' : 'no');
     const question = `Question: ${generateNumber}!`;
     arrRound.push([question, answer]);
-}
-return arrRound;
+  }
+  return arrRound;
 };
 
 const prime = () => startGame(description, startRound);

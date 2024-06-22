@@ -15,7 +15,7 @@ function startRound() {
     arrRound.push([question, answer]);
   }
   return arrRound;
-};
+}
 
 const even = () => startGame(description, startRound);
 
