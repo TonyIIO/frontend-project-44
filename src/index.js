@@ -6,7 +6,7 @@ const startGame = (description, generateRound) => {
   console.log(`Hello, ${name}!`);
   console.log(description);
   const arrRound = generateRound();
-  for (let i = 0; i < arrRound.length; i += 1){
+  for (let i = 0; i < arrRound.length; i += 1) {
     const arrOneRound = arrRound[i];
     const [question, answer] = arrOneRound;
     console.log(question);
