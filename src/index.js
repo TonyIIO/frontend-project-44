@@ -19,5 +19,4 @@ const startGame = (description, generateRound) => {
   }
   console.log(`Congratulations, ${name}!`);
 };
-
 export default startGame;
