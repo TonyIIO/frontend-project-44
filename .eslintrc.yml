@@ -1,0 +1,36 @@
+---
+
+# https://github.com/jest-community/eslint-plugin-jest
+plugins:
+  - jest 
+  - import
+# Правильный способ включения поддержки глобальных идентификаторов
+# https://eslint.org/docs/user-guide/configuring#specifying-environments
+env:
+  node: true
+  jest: true
+  es2020: true
+
+extends:
+  - airbnb-base
+
+
+# Включает поддержку конструкции import.meta.url
+parserOptions:
+  ecmaVersion: 2020
+
+# Единственное отключенное правило. Все остальное должно соблюдаться
+rules:
+  no-console: 0
+  no-underscore-dangle: [2, { "allow": ["__filename", "__dirname"] }]
+  linebreak-style: ["error", "windows"]
+  import/no-unresolved: [2, { "caseSensitive": false }]
+  import/extensions: [
+    'error',
+    {
+      js: 'always',
+    },
+  ]
+  import/no-named-as-default: 'off'
+  import/no-named-as-default-member: 'off'
+  import/no-extraneous-dependencies: 'off'
